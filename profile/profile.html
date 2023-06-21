@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div>
+            <i class="fa-solid fa-bars" id="sdbar"></i>
+            <a href=""><span>SALIPO</span></a>
+        </div>
+            <nav><ul>
+            <li><a href="../main/main.html">home</a></li>
+            <li><a href="../addlisting/add.html">add a listing</a></li>
+            <li><a href=""><select name="" id=""><option value="">en</option><option value="">fr</option></select></a></li></ul></nav>
+            <div><i class="fa-regular fa-user"></i><a href="profile.html" id="usernamepr">profile</a></div>
+        </header>
+        <hr>
+        <div id="main">
+            <div id="side">
+                <img src="prf.png" alt="image">
+                <nav>
+                    <ul><li>Notification</li>
+                    <li>About</li>
+                    <li id="active">settings</li>
+                    <li>add accoumndation</li>
+                    <li id="chngaccount" onclick="ff()">change your account</li>
+                <li><input type="submit" onclick="location.assign('../login/login.html')" value="disconnect"></li></ul>
+                </nav>
+            </div>
+            <hr>
+            <div id="cntr">
+                <div id="np">
+                    <p id="fullnamee">Full name</p>
+                    <div id="lolo"> <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i>
+                    <p id="place">Place</p></div>
+                </div>
+                <a href="" style="margin: 0 30px; font-size: 20px; text-decoration: underline;">Send a message</a>
+                <div id="about">
+                    <p>About</p>
+                    <hr>
+                    <div id="tabel">
+                    </div>
+                </div>
+                <div id="sttngs">
+                    <p>settings</p>
+                    <hr>
+                    <div id="tabel">
+                        <ul class="ful">
+                            <li>Birth Date: <input type="text" id="fchange"></li>
+                            <li>Adresse: <input type="text" id="schange"></li>
+                            <li>Email: <input type="text" id="tchange"></li>
+                            <li>Phone: <input type="text" id="fochange"></li>
+                        </ul>
+                    </div>
+                    <div id="btns">
+                        <input type="cancel" id="cancel" value="cancel" onclick="reset()">
+                        <input type="change" id="change" value="change" onclick="change()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/993872ee7e.js" crossorigin="anonymous"></script>
+<script src="profile.js"></script>
+</html>

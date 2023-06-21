@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div id="logo">
+                <a href="login.html"><h1>HOTEL</h1></a>
+                <ul class="nav">
+                <li><a href="#">main</a></li>
+                <li><a href="#">add document</a></li>
+                <li><a href="#">profile</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul></div>
+            <div>
+                <img src="sgn.png" alt="picture">
+            </div>
+        </header><hr>
+        <div class="main">
+            <div id="form">
+                <div id="rg">
+                    <h1>login</h1>
+                    <input type="text" id="email" placeholder="email"><br>
+                    <input type="password" id="password" placeholder="password"><br>
+                    <input type="submit" value="Login In" onclick="log()"><br>
+                    <input type="checkbox" name="ck" id="ck"><label for="ck" id="rmbr">Remembre me ?</label>
+                    <p id="sgn" onclick="rdrctsignup()">Sign Up</p>
+                </div>
+                <hr>
+                <div id="lf">
+                    <h1>Sign Up</h1>
+                    <input type="text" id="fname" placeholder="Full name" onkeyup="checkname()"><br>
+                    <input type="text" id="username" placeholder="username" onkeyup="checkusername()"><br>
+                    <input type="text" id="s-email" placeholder="email" onkeyup="checkemail()"><br>
+                    <input type="password" id="s-password" placeholder="password"><br>
+                    <input type="password" id="cs-password" placeholder="Confirme password" onkeyup="checkpassword()"><br>
+                    <input type="submit" value="Login In" onclick="creatacc()">
+        
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p id="credit">made by nmi</p>
+        </footer>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

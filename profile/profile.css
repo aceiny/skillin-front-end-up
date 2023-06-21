@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    scroll-behavior: smooth;
+    font-family: 'Inter';
+}
+#side ul li{
+    transition: 1s;
+    padding: 10px;
+}
+#side ul li:hover { 
+    color: #00D7FF;
+    cursor: pointer;
+}
+body {
+    overflow: hidden;
+}
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 10px 50px;
+}
+header i {
+    margin-right: 30px;
+    font-size: 28px;
+}
+header span {
+    font-size: 42px;
+
+}
+header nav ul li {
+    font-size: 28px;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+header [href="profile.html"]{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+i:hover { 
+    cursor: pointer;
+}
+ #active { 
+    color: #00D7FF;
+}
+header a {
+    color: black;
+    transition: 1s;
+}
+header a:hover { 
+    color: #00D7FF;
+}
+#side { 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width: 170px;
+    padding: 35px;
+    transition: 4s;
+}
+#side img {
+    margin: 25px 0 40px 0;
+}
+#side ul  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 600px;
+}
+#side ul li{ 
+    font-size: 28px;
+    list-style: none;
+}
+#side ul li input { 
+    width: 220px;
+    height: 35px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+#side ul li input:hover {  
+    border: 3px solid #00D7FF;
+    scale: 1.05;
+
+}
+#fullnamee { 
+    font-size: 28px;
+    text-transform: uppercase;
+}
+#main { 
+    display: flex;
+    justify-content: start;
+}
+#cntr {
+    float: right;
+    width: fit-content;
+    width: 90%;
+
+}
+#np { 
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 30px 30px 0 30px;
+}
+#lolo{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+#about { 
+    padding: 30px;
+    margin-top: 1%;
+}
+#about p {
+    color: #00D7FF;
+    font-size: 28px;
+}
+#tabel { 
+    display: flex;
+    align-items: center;
+
+}
+.ful { 
+
+    margin: 20px 50px 0 0 ;
+    list-style: none;
+    font-size: 22px;
+}
+.ful li { 
+    padding: 10px 0;
+}
+.sul { 
+    list-style: none;
+    margin : 15px 0 0 20px;
+    font-size: 22px;
+}
+.sul li { 
+    padding: 10px 0 ;
+}
+#sttngs { 
+    padding: 30px;
+}
+#sttngs p {
+    color: #00D7FF;
+    font-size: 28px;
+}
+#sttngs .ful li {
+    padding: 14px 0;
+}
+#sttngs .ful input{
+    width: 300px; 
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    transition: 1s;
+    border: 1px solid #00D7FF;
+}
+#btns{
+    display: flex;
+    padding: 0 150px;
+    align-items: center;
+}
+#btns input{
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    transition: 1s;
+}
+#btns input:hover { 
+    scale: 1.05 ;
+    cursor: pointer;
+}
+#btns input:last-child{
+    margin:0 0 0 65px;
+    background-color: #00D7FF;
+}
+.sidedective {
+    position: absolute;
+    left: -200%;
+}
+#fchange {margin-left:30px ;}
+#schange {margin-left:50px ;}
+#tchange {margin-left:80px ;}
+#fochange {margin-left:71px ;}
+@media  (max-width : 700px){
+    body { 
+        overflow: scroll;
+    }
+    .ful{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #fchange {margin-left:0px ;}
+    #schange {margin-left:0px ;}
+    #tchange {margin-left:0px ;}
+    #fochange {margin-left:0px ;}
+    #side { 
+        display: none;
+    }
+    #btns{
+        padding: 0;
+    }
+}
+@media (max-width : 700px) { 
+    header nav { 
+        display: none;
+    }
+    header [href="profile.html"]{
+        display: none;
+    }
+}

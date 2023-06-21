@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+    border: none;
+}
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 10px 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 11000;
+}
+header i {
+    margin-right: 25px;
+    font-size: 28px;
+}
+header span {
+    font-size: 42px;
+
+}
+header nav ul li {
+    font-size: 28px;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+header a {
+    text-decoration: none;
+}
+header [href="../profile/profile.html"]{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+i:hover { 
+    cursor: pointer;
+}
+ #active { 
+    color: #00D7FF;
+}
+header a {
+    color: black;
+    transition: 1s;
+}
+header a:hover { 
+    color: #00D7FF;
+}
+.main { 
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.sidecntn{
+    background-color: black;
+    width: 500px;
+}
+#side { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width : 17%;
+    padding: 15px; 
+    margin-left: 15px;
+    position: sticky;
+    top: 11%;
+}
+#srch { 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#srchic{
+    border: 3px solid #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    height: 45px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+}
+#srchic input {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+#srchic input:focus {
+border: none;
+}
+.filter { 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+}
+.filter select {
+    width: 90%;
+    height: 50px;
+    margin: 10px 0 30px 0; 
+    background: #FFFFFF;
+    border: 3px solid #D9D9D9;
+    border-radius: 19px;
+    padding-left: 10px;
+}
+.filter button { 
+    width: 90%;
+    background: #00D7FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    height: 45px;
+    margin: 35px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100%;
+    line-height: 36px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.filter button:hover { 
+    cursor: pointer;
+}
+.filet label  {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+#cntr{ 
+    padding-top: 4%;
+    width: 80%;
+    margin-left: 10%;
+}
+.add{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    margin-bottom: 20px;
+}
+.add img { 
+    width: 220px;
+    margin-right: 20px;
+}
+.add span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 42px;
+    
+    color: #000000;
+    
+    margin-right: 2px;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transform: translate(0,-12px);
+}
+.infos p { 
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 42px;
+
+color: rgba(0, 0, 0, 0.8);} 
+.infos a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px;
+    
+    color: rgba(0, 0, 0, 0.8);
+}
+@media (max-width : 700px) { 
+    header nav { 
+        display: none;
+    }
+    header [href="../profile/profile.html"]{
+        font-size: 20px;
+    }
+    header [href="../profile/profile.html"] i{
+        font-size: 20px;
+    }
+}

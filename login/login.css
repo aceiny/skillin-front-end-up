@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(transparent 70%,#00D7FF);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 58px;
+    padding: 0 50px;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+.nav a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.nav a:hover{
+    background-color: #00D7FF;
+}
+a {
+    text-decoration: none;
+}
+header img {
+    width: 160px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form h1{
+    padding-bottom: 35px;
+}
+#form {
+    background-color: rgba(10, 88, 117, 0.125);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: 50px 0 20px 0;
+    border-radius: 40px;
+}
+
+#form input{
+    width: 250px;
+    height: 10px;
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.48);
+}
+#form input[type="submit"]{
+    width: 240px;
+    height: 5px;
+    margin-top: 15px;
+    padding-bottom: 25px;
+    align-self: center;
+    background-color: transparent;
+    transition: 1s;
+}
+#form input[type="submit"]:hover { 
+background-color: #00D7FF;
+width: 280px;
+cursor: pointer;
+}
+#form #rg { 
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+input[type="checkbox"]{
+    transform: translate(-115px) scale(1.4);
+}
+#rmbr { 
+    transform: translate(20px,-17px);
+}
+#form #lf{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#sgn {
+translate: 200px -40px;
+cursor: pointer;
+width: fit-content;
+}
+#sgn:hover {
+    color: #00D7FF;
+    }
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    transform: translate(0,100px);
+}
+@media (max-width : 700px ) {
+    body { 
+        overflow: visible;
+        height: 100%;
+        background-image: linear-gradient(transparent 70%,#00D7FF);
+    }
+    #form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    #form #lf{
+margin-left: 10px;
+    }
+    #form [type='submit']{
+        margin-left: -20px;
+            }
+        
+}
+@media (max-width : 700px) { 
+    header nav { 
+        display: none;
+    }
+    header [href="profile.html"]{
+        display: none;
+    }
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 10px 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 11000;
+}
+header i {
+    margin-right: 25px;
+    font-size: 28px;
+}
+header span {
+    font-size: 42px;
+
+}
+header nav ul li {
+    font-size: 28px;
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+header a {
+    text-decoration: none;
+}
+header [href="../profile/profile.html"]{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+i:hover { 
+    cursor: pointer;
+}
+ #active { 
+    color: #00D7FF;
+}
+header a {
+    color: black;
+    transition: 1s;
+}
+header a:hover { 
+    color: #00D7FF;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 70%;
+}
+.infos { 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    translate: -50px 0;
+    height: 60vh;
+}
+.infos div{ 
+    margin: 20px;
+    width: 100%;
+}
+.infos div input { 
+    width: 110%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 3px solid #00D7FF;
+    border-radius: 15px;
+    margin-top: 7px;
+    padding-left: 15px;
+}
+.apppic { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    translate: 0 -27px;
+}
+.infos div button { 
+    width: 40%;
+    translate: 25px 0;
+    height: 40px;
+    background-color: #00D7FF;
+    border-radius: 5px;
+    border: none;
+}
+.infos div button:hover { 
+    cursor: pointer;
+}
+#submitinfos button{
+    width: 160%;
+    margin: 50px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.232);
+    border-radius: 15px;
+    transition: 1s;
+    translate: 0 22px;
+}
+#submitinfos button:hover{ 
+    cursor: pointer;
+    background-color: #00D7FF;
+}
+@media (max-width : 700px) { 
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    #submitinfos button{
+        margin-top: 50px;
+        translate: -150px 0;
+    }
+    main{
+        translate: 40px 0;
+    }
+    header nav { 
+        display: none;
+    }
+    header [href="profile.html"]{
+        display: none;
+    }
+}

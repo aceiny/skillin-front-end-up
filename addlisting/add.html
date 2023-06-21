@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a listing</title>
+    <link rel="stylesheet" href="addl.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div>
+            <a href=""><span>Logo</span></a>
+        </div>
+            <nav><ul>
+            <li><a href="../main/main.html">home</a></li>
+            <li><a href="" style="color: #00D7FF;">add a listing</a></li>
+            <li><a href=""><select name="" id=""><option value="">en</option><option value="">fr</option></select></a></li></ul></nav>
+            <div><i class="fa-regular fa-user"></i><a href="../profile/profile.html" id="usernamepr">profile</a></div>
+        </header>
+        <hr>
+        <main>
+            <div id="uploadinfos">
+            <div class="image">
+                <img src="sm.png" alt="imagexD">
+            </div>
+            <div class="infos">
+                <div><label for="">Name of the Appartement</label><br><input type="text" placeholder="" id="appname"></div>
+                <div><label for="">willaya</label><br><input type="text" placeholder="" id="appwillaya"></div>
+                <div><label for="">full adress of the Appartement</label><br><input type="text" placeholder="" id="appaddress"></div>
+                <div><label for="">price for the night</label><br><input type="number" placeholder="" id="appprice"></div>
+                <div class="apppic">a pic Appartement <input type="file" accept="images/*" id="uploadimage" style="display: none;"><button onclick="document.getElementById('uploadimage').click()" id="apppic"> upload photos</button></div>
+                <div class="apppic"><label for="">upload contract</label><button onclick="document.getElementById('uploadimage').click()" id="appcont">upload contact</button></div>
+            </div>
+        </div>
+        <div id="submitinfos">
+            <button id="addlist" onclick="addlisting()">ADD LISTING</button>
+        </div>
+        </main>
+        
+    </div>
+    <div><button style="position: absolute; bottom: 0; right: 0;border-radius: 5px; width: 120px;height: 30px; background-color: rgb(34, 225, 34); color: white; display: none;" id="itmaddd">listing add</button></div>
+</body>
+<script src="https://kit.fontawesome.com/993872ee7e.js" crossorigin="anonymous"></script>
+<script src="add.js"></script>
+</html>
