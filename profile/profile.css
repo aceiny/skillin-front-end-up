@@ -6,6 +6,7 @@
     color: black;
     scroll-behavior: smooth;
     font-family: 'Inter';
+    outline: none;
 }
 #side ul li{
     transition: 1s;
