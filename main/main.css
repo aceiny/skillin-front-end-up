@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Inter";
     border: none;
+    outline: none;
 }
 header { 
     display: flex;
